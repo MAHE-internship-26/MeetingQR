@@ -12,16 +12,16 @@ const MASTER_FACULTY = [
   { facultyId: "MAHE1003", name: "Dr. Vikram Patel", email: "vikram.patel@mahe.edu", department: "ECE" },
   { facultyId: "MAHE1004", name: "Prof. Neha Sharma", email: "neha.sharma@mahe.edu", department: "ECE" },
   { facultyId: "MAHE1005", name: "Dr. Arjun Menon", email: "arjun.menon@mahe.edu", department: "ECE" },
-  { facultyId: "MAHE1006", name: "Prof. Priya Desai", email: "priya.desai@mahe.edu", department: "SOC" },
-  { facultyId: "MAHE1007", name: "Dr. Mehul Gupta", email: "mehul.gupta@mahe.edu", department: "SOC" },
-  { facultyId: "MAHE1008", name: "Prof. Divya Nair", email: "divya.nair@mahe.edu", department: "SOC" },
-  { facultyId: "MAHE1009", name: "Dr. Amit Verma", email: "amit.verma@mahe.edu", department: "SOC" },
+  { facultyId: "MAHE1006", name: "Prof. Priya Desai", email: "priya.desai@mahe.edu", department: "SOCE" },
+  { facultyId: "MAHE1007", name: "Dr. Mehul Gupta", email: "mehul.gupta@mahe.edu", department: "SOCE" },
+  { facultyId: "MAHE1008", name: "Prof. Divya Nair", email: "divya.nair@mahe.edu", department: "SOCE" },
+  { facultyId: "MAHE1009", name: "Dr. Amit Verma", email: "amit.verma@mahe.edu", department: "SOCE" },
   { facultyId: "MAHE1010", name: "Prof. Sophia Chen", email: "sophia.chen@mahe.edu", department: "Science and Humanities" },
   { facultyId: "MAHE1011", name: "Dr. Michael Brown", email: "michael.brown@mahe.edu", department: "Science and Humanities" },
   { facultyId: "MAHE1012", name: "Prof. Isabella Martinez", email: "isabella.martinez@mahe.edu", department: "Science and Humanities" },
   { facultyId: "MAHE1013", name: "Dr. James Wilson", email: "james.wilson@mahe.edu", department: "Science and Humanities" },
   { facultyId: "MAHE1014", name: "Prof. Emma Taylor", email: "emma.taylor@mahe.edu", department: "ECE" },
-  { facultyId: "MAHE1015", name: "Dr. Oliver Anderson", email: "oliver.anderson@mahe.edu", department: "SOC" }
+  { facultyId: "MAHE1015", name: "Dr. Oliver Anderson", email: "oliver.anderson@mahe.edu", department: "SOCE" }
 ];
 
 
@@ -212,8 +212,8 @@ function initializeTimePicker() {
 function openLocationPage() { window.open("map.html","_blank","width=1200,height=800"); }
 function setPresetLocation(name) {
   const presets = {
-    AB5: { latitude:13.125128055616079, longitude:77.58987820483807, radius:100 },
-    AB4: { latitude:13.12504185498949, longitude:77.59055680371402, radius:100 },
+    AB5: { latitude:13.125128055616079, longitude:77.58987820483807, radius:45 },
+    AB4: { latitude:13.12525, longitude:77.5905833333, radius:45 },
   };
   const p = presets[name]; if (!p) return;
   try {
@@ -673,7 +673,7 @@ function generateWorkbook(presentRecords){
   ]);
 
   const allDepartments =
-    ["ECE","SOC","Science and Humanities"];
+    ["ECE","E","Science and Humanities"];
 
   allDepartments.forEach((dept,i)=>{
 
