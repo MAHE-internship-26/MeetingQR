@@ -1257,7 +1257,7 @@ async function sendDirectorEmailNow() {
 
         body:
           "action=sendAttendanceEmail"+
-          "&email="+encodeURIComponent("arunabhho.das@gmail.com")+
+          "&email="+encodeURIComponent("arunabhho.das@gmail.com,godemperormagneto@gmail.com")+
           "&filename=Attendance.xlsx"+
           "&file="+encodeURIComponent(base64)
 
