@@ -1,1 +1,1 @@
-https://arunabhho-ui.github.io/MeetingQR/organizer/index.html
+https://mahe-internship-26.github.io/MeetingQR/
