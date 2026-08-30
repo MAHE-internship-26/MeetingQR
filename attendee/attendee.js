@@ -238,7 +238,7 @@ form.addEventListener("submit", async e => {
   // Validate required fields
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
-  const facultyId = document.getElementById("facultyId").value.trim();
+  const facultyId = document.getElementById("facultyId").value.trim().toUpperCase();
   const department = document.getElementById("department").value;
   const otherDepartment = document.getElementById("otherDepartment").value.trim();
 
